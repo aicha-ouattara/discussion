@@ -1,0 +1,254 @@
+.body0
+{
+    margin: 0;
+    height: 100vh;
+    background-image: url("../images/spices.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+
+
+.article h1, .article a, .nav
+
+{
+    padding: 10px;
+}
+
+.nav a
+{
+   padding: 10px;
+   color: white;
+}
+
+.article h1
+{
+    color: white;
+}
+.article a
+{
+    color: white;
+    background-color:black ;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Inscription */
+
+.body1
+{
+    margin: 0;
+    height: 100vh;
+    background-image: url("../images/cooki.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+/* Connexion */
+
+.body2
+{
+    margin: 0;
+    height: 100vh;
+    background-image: url("../images/AfriknFusion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+/* Profil-index */
+
+.profil_index_a a
+{
+    color: white;
+    background-color: chocolate;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    flex-direction: column;
+}
+.profil_index_a h1
+{
+    color: white;
+}
+
+.profil_index_a
+{
+    background-color: black;
+    width: 800px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+
+}
+
+.profil_index_a p
+{
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+
+.body3
+{
+    margin: 0;
+    height: 100vh;
+    background-image: url("../images/sardines.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+/* Profil */
+
+.body4
+{
+    margin: 0;
+    height: 100vh;
+    background-image: url("../images/platter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.form
+{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+   
+}
+
+input
+{
+    margin: 10px;
+}
+.profil
+{
+    text-align: center;
+}
+
+/* Discussion */
+
+.flex1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.flex1 img
+{
+    height: 750px;
+}
+.scroll
+{
+    height: 500px;
+    width: 800px;
+    overflow-y: scroll;
+    background-color: black;
+    padding: 20px;
+    /* scroll-behavior: smooth; */
+    /* scroll-snap-type: y mandatory; */
+}
+
+span
+{
+    color: black;
+    font-size: 20px;
+}
+.span
+{
+    font-size: 50px;
+}
+.scroll h1
+{
+    font-size: 40px;
+}
+.body5
+{
+    margin: 0;
+    height: 100vh;
+    /* background-image: url("../images/sardines.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    color: white;
+
+}
+
+.form_discussion
+{
+  padding: 20px;
+}
+
+.background
+{
+    background-color: chocolate;
+    border-radius: 8px;
+}
+.message
+{
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+}
+
+textarea
+{
+    resize: none;
+    border: 1px solid chocolate;
+   
+    font-family: 'Dosis', sans-serif;
+
+}
+
+input[type='submit']
+{
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    background-color: chocolate;
+    border-radius: 7px;
+    font-family: 'Dosis', sans-serif;
+
+}
