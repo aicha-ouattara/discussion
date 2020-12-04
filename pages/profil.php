@@ -61,7 +61,6 @@ else
     <nav class="nav">
         <!--Nav-->
         <a href='profil-index.php'>Bienvenue</a>
-        <a href='profil.php'>Profil</a>
         <a href='discussion.php'>On Dis-cuisine ?</a>
         <a href='deconnexion.php'>Deconnexion</a>
         <!--Nav-->

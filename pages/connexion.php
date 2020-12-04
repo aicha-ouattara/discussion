@@ -60,7 +60,7 @@ if(isset($_POST["submit"]))
             </div>
 
             <div>
-                <input class="submit" type="submit" name="submit" value="JE M'INSCRIS">
+                <input class="submit" type="submit" name="submit" value="connexion">
             </div>
 
             <?php
