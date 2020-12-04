@@ -77,7 +77,7 @@ if(isset($_POST["submit"]))
             <h1>Inscription</h1>
 
             <div>
-                <label for="login"></label>
+                <!--<label for="login"></label>-->
                 <input type="text" name="login" id="login" placeholder="Votre login">
             </div>
 
