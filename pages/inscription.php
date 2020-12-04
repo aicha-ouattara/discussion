@@ -93,7 +93,7 @@ if(isset($_POST["submit"]))
             </div>
 
             <div>
-                <input class="submit" type="submit" name="submit" value="JE M'INSCRIS">
+                <input class="submit" type="submit" name="submit" value="Je m'inscris">
             </div>
             <?php
             if(isset($error))
