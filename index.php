@@ -11,9 +11,9 @@
 
         <!--Nav PHP-->
         <a href='index.php'>Accueil</a>
-        <a href='inscription.php'>Inscription</a>
-        <a href='connexion.php'>Connexion</a>
-        <a href='discussion.php'> On Dis-cuisine ?</a>
+        <a href='pages/inscription.php'>Inscription</a>
+        <a href='pages/connexion.php'>Connexion</a>
+        <a href='pages/discussion.php'> On Dis-cuisine ?</a>
 
       
         <!--Nav PHP-->
@@ -23,7 +23,7 @@
 <main>
     <article class="article">
         <h1>Cuisines et saveurs du monde</h1>
-        <a href='discussion.php'> Debattez avec des passionés comme vous ! </a>
+        <a href='pages/discussion.php'> Debattez avec des passionés comme vous ! </a>
 
     </article>
 

@@ -1,6 +1,6 @@
 <?php
 session_start(); //Session connexion
-require ('functions.php');
+require ('../config/functions.php');
 
 if (is_loggedin())
 {
@@ -29,7 +29,7 @@ else
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <title>Commentaires</title>
 </head>
 <body class="body5">
@@ -46,7 +46,7 @@ else
 <main>
 
 <section class="flex1">
-<img src="images/pexels.jpg" alt="chat">
+<img src="../images/pexels.jpg" alt="chat">
 <article>
 
     <article class="scroll">

@@ -1,13 +1,13 @@
 <?php
 session_start(); //Session connexion
-require ('functions.php');
+require ('../config/functions.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Que voulez-vous faire ?</title>
 </head>

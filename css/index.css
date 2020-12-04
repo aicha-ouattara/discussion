@@ -15,8 +15,6 @@
 
 }
 
-
-
 .article h1, .article a, .nav, .nav1, .nav2
 
 {
@@ -268,6 +266,9 @@ span
 {
     font-size: 40px;
 }
+
+/*Discussion*/
+
 .body5
 {
     margin: 0;

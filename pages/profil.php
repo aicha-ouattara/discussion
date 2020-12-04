@@ -1,6 +1,6 @@
 <?php
 session_start(); //Session connexion
-require ('functions.php');
+require ('../config/functions.php');
 
 if (is_loggedin())
 {
@@ -14,7 +14,7 @@ if (is_loggedin())
         $newlogin = htmlspecialchars($_POST['newlogin']);
         if (strlen($newlogin) <6)
         {
-            $error = "6 characters minimun pour le mot de passe et le login";
+            $error = "6 characters minimun pour le login";
         }
         else{
             update_login($newlogin);
@@ -27,7 +27,7 @@ if (is_loggedin())
         $newpassword = ($_POST['newpassword']);
         if (strlen($newpassword) <6)
         {
-            $error = "6 characters minimun pour le mot de passe et le login";
+            $error = "6 characters minimun pour le mot de passe ";
         }
         else{
             update_password($newpassword);
@@ -45,14 +45,14 @@ else
 
 
 
-
+<!--Debut page display -->
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <title>Inscription</title>
 </head>
 
