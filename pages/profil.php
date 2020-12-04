@@ -9,7 +9,7 @@ if (is_loggedin())
     $req->execute(array($_SESSION["id"]));
     $users=$req->fetch(PDO::FETCH_ASSOC);
 
-    if(isset($_POST['newlogin']) AND !empty($_POST['newlogin']) AND $_POST['newlogin'] != $users['login']) 
+    if(isset($_POST['newlogin']) AND !empty($_POST['newlogin']) AND $_POST['newlogin'] != $users['login'])
     {
         $newlogin = htmlspecialchars($_POST['newlogin']);
         if (strlen($newlogin) <6)
@@ -22,7 +22,7 @@ if (is_loggedin())
         }
 
     }
-    if(isset($_POST['newpassword']) AND !empty($_POST['newpassword']) AND $_POST['newpassword'] != $users['password']) 
+    if(isset($_POST['newpassword']) AND !empty($_POST['newpassword']) AND $_POST['newpassword'] != $users['password'])
     {
         $newpassword = ($_POST['newpassword']);
         if (strlen($newpassword) <6)
@@ -53,19 +53,19 @@ else
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css" />
-    <title>Inscription</title>
+    <title>Profil</title>
 </head>
 
 <body class="body4">
 <header>
-<nav class="nav">
-<!--Nav-->
-<a href='profil-index.php'>Bienvenue</a>
-<a href='profil.php'>Profil</a>
-<a href='discussion.php'>On Dis-cuisine ?</a>
-<a href='deconnexion.php'>Deconnexion</a>
-<!--Nav-->
-</nav>
+    <nav class="nav">
+        <!--Nav-->
+        <a href='profil-index.php'>Bienvenue</a>
+        <a href='profil.php'>Profil</a>
+        <a href='discussion.php'>On Dis-cuisine ?</a>
+        <a href='deconnexion.php'>Deconnexion</a>
+        <!--Nav-->
+    </nav>
 </header>
 
 <main>
@@ -74,7 +74,7 @@ else
         <!--Debut form -->
         <form class="form" method="post" action="profil.php">
             <h1><?php echo $users['login']. " "."Modifie ton profil"; ?>  </h1>
-            <div class="formflex">
+            <div>
                 <div>
                     <!-- <label for="login">Login</label>-->
                     <input type="text" name="newlogin" id="login" placeholder="votre login">
@@ -97,15 +97,15 @@ else
                 echo $error;
             }
             ?>
-          
+
         </form>
         <!--End form -->
 
     </section>
 
     <article class="profil">
-    <a href="discussion.php">Discussion</a>
-    <a href="deconnexion.php">Deconnexion</a>
+        <a href="discussion.php">Discussion</a>
+        <a href="deconnexion.php">Deconnexion</a>
     </article>
 </main>
 

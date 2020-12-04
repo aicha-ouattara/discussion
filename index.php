@@ -14,8 +14,6 @@
         <a href='pages/inscription.php'>Inscription</a>
         <a href='pages/connexion.php'>Connexion</a>
         <a href='pages/discussion.php'> On Dis-cuisine ?</a>
-
-      
         <!--Nav PHP-->
 
     </nav>

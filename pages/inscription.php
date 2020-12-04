@@ -20,7 +20,7 @@ if(isset($_POST["submit"]))
     else
     {
         login_exist($login);
-        
+
         if(!login_exist($login))
         {
             $error = "Désolé le login exite déjà !";
@@ -58,43 +58,43 @@ if(isset($_POST["submit"]))
 
 <body class="body1">
 <header>
-<nav class="nav1">
-<!--Nav-->
-<a href='../index.php'>Accueil</a>
-<a href='inscription.php'>Inscription</a>
-<a href='connexion.php'>Connexion</a>
-<a href='discussion.php'> On Dis-cuisine ?</a>
-<!--Nav-->
-</nav>
+    <nav class="nav1">
+        <!--Nav-->
+        <a href='../index.php'>Accueil</a>
+        <a href='inscription.php'>Inscription</a>
+        <a href='connexion.php'>Connexion</a>
+        <a href='discussion.php'> On Dis-cuisine ?</a>
+        <!--Nav-->
+    </nav>
 </header>
 
 <main>
-<article>
-</article>
+    <article>
+    </article>
     <section>
         <!--Debut form -->
         <form class="form" method="post" action="inscription.php">
-        <h1>Inscription</h1>
+            <h1>Inscription</h1>
 
-                <div>
-                    <label for="login"></label>
-                    <input type="text" name="login" id="login" placeholder="Votre login">
-                </div>
+            <div>
+                <label for="login"></label>
+                <input type="text" name="login" id="login" placeholder="Votre login">
+            </div>
 
 
-                <div>
-                     <!--<label for="password"></label>-->
-                    <input type="password" name="password" id="password" placeholder="Votre mot de passe">
-                </div>
+            <div>
+                <!--<label for="password"></label>-->
+                <input type="password" name="password" id="password" placeholder="Votre mot de passe">
+            </div>
 
-                <div>
-                    <!--<label for="password2"></label>-->
-                    <input type="password" name="password2" id="password2" placeholder="Confirmation">
-                </div>
+            <div>
+                <!--<label for="password2"></label>-->
+                <input type="password" name="password2" id="password2" placeholder="Confirmation">
+            </div>
 
-                <div>
-                    <input class="submit" type="submit" name="submit" value="JE M'INSCRIS">
-                </div>
+            <div>
+                <input class="submit" type="submit" name="submit" value="JE M'INSCRIS">
+            </div>
             <?php
             if(isset($error))
             {

@@ -13,39 +13,39 @@ require ('../config/functions.php');
 </head>
 <body class="body3">
 <header>
-<nav class="nav">
-<!--Nav-->
-<a href='profil-index.php'>Bienvenue</a>
-<a href='profil.php'>Profil</a>
-<a href='discussion.php'> On DIScuisine ?</a>
-<a href='deconnexion.php'>Deconnexion</a>
-<!--Nav-->
-</nav>
+    <nav class="nav">
+        <!--Nav-->
+        <a href='profil-index.php'>Bienvenue</a>
+        <a href='profil.php'>Profil</a>
+        <a href='discussion.php'> On Dis-cuisine ?</a>
+        <a href='deconnexion.php'>Deconnexion</a>
+        <!--Nav-->
+    </nav>
 </header>
 <main>
     <article class="profil_index_a">
-       
+
         <?php
         if (is_loggedin()) {
-        $bdd = db();
-        $req = $bdd->prepare("SELECT * FROM utilisateurs WHERE id = ? ");
-        $req->execute(array($_SESSION["id"]));
-        $users=$req->fetch(PDO::FETCH_ASSOC);
-        
+            $bdd = db();
+            $req = $bdd->prepare("SELECT * FROM utilisateurs WHERE id = ? ");
+            $req->execute(array($_SESSION["id"]));
+            $users=$req->fetch(PDO::FETCH_ASSOC);
+
             echo "<h1>Bienvenue " . $users['login'] . " ! </h1>
 
-                    <a href='profil.php'>Modifier votre profil</a><br/>
+                    <a href='profil.php'>Modifie ton profil</a><br/>
 					<a href='discussion.php'>Discussion</a><br/>
 					<a href='deconnexion.php'>Se déconnecter</a>";
         } else {
             redirect("connexion.php");
         }
         ?>
-         <p>
-        Les recettes du monde sont toujours à la mode . Envie de faire un petit tour du globe ? Voyagez à 
-        travers nos nombreuses recettes étrangères et découvrez les saveurs du monde. Prenez place à une table en Inde, 
-        au Japon, en Chine, au Maghreb, en Italie, en Grèce, aux Etats-Unis… Les recettes du monde s’invitent chez vous.
-        Discutez avec tous les passionnés du globe !
+        <p>
+            Les recettes du monde sont toujours à la mode . Envie de faire un petit tour du globe ? Voyagez à
+            travers nos nombreuses recettes étrangères et découvrez les saveurs du monde. Prenez place à une table en Inde,
+            au Japon, en Chine, au Maghreb, en Italie, en Grèce, aux Etats-Unis… Les recettes du monde s’invitent chez vous.
+            Discutez avec tous les passionnés du globe !
         </p>
     </article>
 
