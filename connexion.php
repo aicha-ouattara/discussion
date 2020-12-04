@@ -33,11 +33,11 @@ if(isset($_POST["submit"]))
 
 <body class="body2">
 <header>
-    <nav class="nav">
+    <nav class="nav1">
     <a href='index.php'>Accueil</a>
 <a href='inscription.php'>Inscription</a>
 <a href='connexion.php'>Connexion</a>
-<a href='discussion.php'> On DIScuisine ?</a>
+<a href='discussion.php'> On Dis-cuisine ?</a>
 
     </nav>
 </header>
@@ -60,15 +60,13 @@ if(isset($_POST["submit"]))
                 </div>
 
                 <div>
-                    <input type="submit" name="submit" value="JE M'INSCRIS">
+                    <input class="submit" type="submit" name="submit" value="JE M'INSCRIS">
                 </div>
 
             <?php
             if(isset($error))
             {
-
             echo $error;
-
             }
             ?>
         </form>
@@ -78,7 +76,6 @@ if(isset($_POST["submit"]))
 </main>
 
 <footer>
-    <p></p>
 </footer>
 
 </body>

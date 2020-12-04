@@ -7,7 +7,7 @@
 </head>
 <body class="body0">
 <header>
-    <nav class="nav">
+    <nav class="nav1">
 
         <!--Nav PHP-->
         <a href='index.php'>Accueil</a>

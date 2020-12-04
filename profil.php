@@ -63,7 +63,7 @@ else
 <!--Nav PHP-->
 <a href='profil-index.php'>Bienvenue</a>
 <a href='profil.php'>Profil</a>
-<a href='discussion.php'> On DIScuisine ?</a>
+<a href='discussion.php'>On Dis-cuisine ?</a>
 <a href='deconnexion.php'>Deconnexion</a>
 
 
@@ -90,7 +90,7 @@ else
                     <input type="password" name="newpassword" id="password" placeholder="Votre mot de passe ">
                 </div>
 
-                <input type="submit" name="submit" value="Modifie">
+                <input class="submit"  type="submit" name="submit" value="Modifie">
             </div>
             <?php
             if(isset($msg))
@@ -115,7 +115,6 @@ else
 </main>
 
 <footer>
-    <p></p>
 </footer>
 
 </body>

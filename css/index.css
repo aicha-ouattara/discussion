@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .body0
 {
     margin: 0;
     height: 100vh;
-    background-image: url("../images/spices.jpg");
+    background-image: url("../images/masala.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: right;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+
 }
 
 
 
-.article h1, .article a, .nav
+.article h1, .article a, .nav, .nav1, .nav2
 
 {
     padding: 10px;
@@ -25,9 +28,20 @@
    color: white;
 }
 
+.nav1 a
+{
+    padding: 10px;
+    color: black;
+}
+.nav2 a
+{
+    padding: 10px;
+    color: black;
+}
 .article h1
 {
-    color: white;
+    color: black;
+    font-size: 50px;
 }
 .article a
 {
@@ -35,6 +49,12 @@
     background-color:black ;
     text-decoration: none;
     margin: 10px;
+    font-size: 30px;
+}
+
+.article a:hover
+{
+    background-color: chocolate;
 }
 
 /* Inscription */
@@ -49,7 +69,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: right;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+
 }
 /* Connexion */
 
@@ -63,7 +85,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: right;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+
 }
 
 /* Profil-index */
@@ -103,8 +127,9 @@
     margin-right:auto ;
     text-align: center;
     padding: 30px;
-    border-radius: 5px;
-
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.42);
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.42);
 }
 
 .profil_index_a p
@@ -121,13 +146,15 @@
 {
     margin: 0;
     height: 100vh;
-    background-image: url("../images/sardines.jpg");
+    background-image: url("../images/market.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: right;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+
 }
 
 /* Profil */
@@ -142,7 +169,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: right;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+
 }
 
 .form
@@ -156,7 +185,9 @@
     display:block;
     margin-right: auto;
     margin-left: auto;
-   
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.42);
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.42);
 }
 
 
@@ -211,9 +242,16 @@ input
     /* scroll-snap-type: y mandatory; */
 }
 
-span
+.date
 {
     color: black;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+
+}
+span
+{
+    color: chocolate;
     font-size: 20px;
 }
 .span
@@ -237,6 +275,7 @@ span
     justify-content: space-between;
     text-align: right;
     color: white;
+    font-family: 'Anton', sans-serif;
 
 }
 
@@ -247,7 +286,7 @@ span
 
 .background
 {
-    background-color: chocolate;
+    background-color: white;
     border-radius: 8px;
 }
 .message
@@ -255,27 +294,48 @@ span
     font-size: 14px;
     padding: 5px;
     margin: 5px;
+    color: black;
+    font-family: 'Dosis', sans-serif;
+
 }
 
 textarea
 {
     resize: none;
     border: 1px solid chocolate;
-   
+    margin: 10px;
     font-family: 'Dosis', sans-serif;
+}
+
+textarea::placeholder
+{
+    color: chocolate;
+    font-family: 'Anton', sans-serif;
 
 }
 
-input[type='submit']
+.submit
 {
     border: none;
     padding: 12px;
     color: white;
     font-weight: bold;
     background-color: chocolate;
-    border-radius: 7px;
+    border-radius: 5px;
     font-family: 'Dosis', sans-serif;
 
+}
+
+.submit1
+{
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    background-color: chocolate;
+    width: 30%;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
 input
@@ -296,3 +356,4 @@ input::placeholder
     font-size: 16px;
     font-weight: bold;
 }
+

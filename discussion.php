@@ -39,7 +39,7 @@ else
 <!--Nav PHP-->
 <a href='profil-index.php'>Bienvenue</a>
 <a href='profil.php'>Profil</a>
-<a href='discussion.php'> On DIScuisine ?</a>
+<a href='discussion.php'> On Dis-cuisine ?</a>
 <a href='deconnexion.php'>Deconnexion</a>
 
 
@@ -55,7 +55,7 @@ else
 <article>
 
     <article class="scroll">
-    <h1><?php echo $users['login'] ." ". "Partage ton avis !"; ?> </h1>
+    <h1><?php echo $users['login'] ." ". "commence à discuter !"; ?> </h1>
 
     <?php
     
@@ -66,7 +66,7 @@ else
       {
           $date=date('d/m/Y', strtotime($row["date"]));
           echo "<div class='background'>";
-          echo '<div><p><span>'.$row['login'].'</span>' . ' | '. $date . ' <br></p></div>';
+          echo '<div><p><span>'.$row['login'].'</span>' . '<span class="date"> | '. $date . ' </span><br></p></div>';
           echo '<div class="message">'. $row['message']  .'</div>';
           echo "</div>";
       }
@@ -79,10 +79,10 @@ else
             <div class="formflex">
                 <div>
                     <!--<label for="description">Commentaires</label>-->
-                    <textarea id="description" name="description" rows="2" cols="60" placeholder="Ecris !" ></textarea>
+                    <textarea id="description" name="description" rows="3" cols="110" placeholder="Ecris !" ></textarea>
                 </div>
 
-                <input type="submit" name="submit" value="Commentes !">
+                <input class="submit1" type="submit" name="submit" value="Commentes !">
             </div>
         </form>
         <!--End form -->
@@ -95,8 +95,6 @@ else
     
 </main>
 <footer>
-    <nav class="nav">
-    </nav>
 </footer>
 </body>
 </html>
