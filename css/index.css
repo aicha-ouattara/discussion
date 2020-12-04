@@ -143,14 +143,15 @@
     background-color: black;
     color: white;
     padding: 30px;
-    width: 400px;
-    height: 300px;
+    width: 470px;
+    height: 470px;
     text-align: center;
     display:block;
     margin-right: auto;
     margin-left: auto;
    
 }
+
 
 input
 {
@@ -251,4 +252,23 @@ input[type='submit']
     border-radius: 7px;
     font-family: 'Dosis', sans-serif;
 
+}
+
+input
+{
+    margin: 30px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 70%;
+    color: white;
+    resize: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input::placeholder
+{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
 }

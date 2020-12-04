@@ -49,13 +49,13 @@ if(isset($_POST["submit"]))
         <form class="form" method="post" action="connexion.php">
           <h1>Connexion</h1>
                 <div>
-                    <label for="login">LOGIN</label>
+                    <label for="login"></label>
                     <input type="text" name="login" id="login" placeholder="Votre login">
                 </div>
 
 
                 <div>
-                    <label for="password">MOT DE PASSE</label>
+                    <label for="password"></label>
                     <input type="password" name="password" id="password" placeholder="Votre mot de passe">
                 </div>
 

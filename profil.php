@@ -14,7 +14,7 @@ if (is_loggedin())
         $newlogin = htmlspecialchars($_POST['newlogin']);
         if (strlen($newlogin) <6)
         {
-            $error[] = "Login must be atleast 6 characters";
+            $error = "Login must be atleast 6 characters";
         }
         else{
             update_login($newlogin);
@@ -27,7 +27,7 @@ if (is_loggedin())
         $newpassword = ($_POST['newpassword']);
         if (strlen($newpassword) <6)
         {
-            $error[] = "Password must be atleast 6 characters";
+            $error = "Password must be atleast 6 characters";
         }
         else{
             update_password($newpassword);
@@ -94,10 +94,7 @@ if (is_loggedin())
             }
             if(isset($error))
             {
-                foreach($error as $error)
-                {
-                    echo $error;
-                }
+                echo $error;
             }
             ?>
           
