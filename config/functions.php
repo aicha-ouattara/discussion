@@ -18,7 +18,7 @@ function db()
 
 function length_text($login, $password)
 {
-    if (strlen($login) <= 6 && strlen($password) <= 6)
+    if (strlen($login) < 6 && strlen($password) < 6)
     {
         return true;
     }
