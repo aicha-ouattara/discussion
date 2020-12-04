@@ -146,6 +146,8 @@ function update_password($newpassword)
 
 }
 
+#Functions for Comment ...
+
 function post_comment($users)
 {
     $bdd = db();

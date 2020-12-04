@@ -14,13 +14,13 @@ if(isset($_POST["submit"]))
     }
     else
     {
-        $error = "Wrong Details !";
+        $error = "Le login ou le mot de passe est incorect !";
     }
 }
 
 ?>
 
-<!-- Debut page display -->
+<!-- Debut-page-display -->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -33,13 +33,14 @@ if(isset($_POST["submit"]))
 
 <body class="body2">
 <header>
+    <!--Nav-->
     <nav class="nav1">
     <a href='index.php'>Accueil</a>
 <a href='inscription.php'>Inscription</a>
 <a href='connexion.php'>Connexion</a>
 <a href='discussion.php'> On Dis-cuisine ?</a>
-
     </nav>
+    <!--Nav-->
 </header>
 
 <main>
@@ -49,13 +50,13 @@ if(isset($_POST["submit"]))
         <form class="form" method="post" action="connexion.php">
           <h1>Connexion</h1>
                 <div>
-                    <label for="login"></label>
+                    <!--<label for="login"></label>-->
                     <input type="text" name="login" id="login" placeholder="Votre login">
                 </div>
 
 
                 <div>
-                    <label for="password"></label>
+                    <!--<label for="password"></label>-->
                     <input type="password" name="password" id="password" placeholder="Votre mot de passe">
                 </div>
 
@@ -82,4 +83,4 @@ if(isset($_POST["submit"]))
 
 </html>
 
-<!--End page display -->
+<!--End-page-display -->

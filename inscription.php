@@ -9,25 +9,25 @@ if(isset($_POST["submit"]))
 
     if(empty($login))
     {
-        $error = "provide username !";
+        $error = "Renseignez un login !";
     }
     else if(empty($password) AND empty($password2)) {
-        $error = "provide password !";
+        $error = "Renseignez un password !";
     }
     else if(strlen($password) < 6 OR strlen($password2) < 6 OR strlen($login) < 6){
-        $error = "Password and login must be atleast 6 characters";
+        $error = "6 characters minimun pour le mot de passe et le login";
     }
     else
     {
         login_exist($login);
         
-        if(login_exist($login) == $login)
+        if(!login_exist($login))
         {
-            $error = "sorry username already taken !";
+            $error = "Désolé le login exite déjà !";
         }
         elseif(!password($password, $password2))
         {
-            $error = "sorry password not the same !";
+            $error = "Désolé les mots de passe ne sont pas identique !";
         }
         else
         {
@@ -45,7 +45,7 @@ if(isset($_POST["submit"]))
 
 
 
-<!-- Debut page display -->
+<!-- Debut-page-display -->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -59,16 +59,12 @@ if(isset($_POST["submit"]))
 <body class="body1">
 <header>
 <nav class="nav1">
-
-<!--Nav PHP-->
+<!--Nav-->
 <a href='index.php'>Accueil</a>
 <a href='inscription.php'>Inscription</a>
 <a href='connexion.php'>Connexion</a>
 <a href='discussion.php'> On Dis-cuisine ?</a>
-
-
-<!--Nav PHP-->
-
+<!--Nav-->
 </nav>
 </header>
 
@@ -87,12 +83,12 @@ if(isset($_POST["submit"]))
 
 
                 <div>
-                    <label for="password"></label>
+                     <!--<label for="password"></label>-->
                     <input type="password" name="password" id="password" placeholder="Votre mot de passe">
                 </div>
 
                 <div>
-                    <label for="password2"></label>
+                    <!--<label for="password2"></label>-->
                     <input type="password" name="password2" id="password2" placeholder="Confirmation">
                 </div>
 
@@ -118,4 +114,4 @@ if(isset($_POST["submit"]))
 
 </html>
 
-<!--End page display -->
+<!--End-page-display -->

@@ -47,15 +47,18 @@
 .article a
 {
     color: white;
-    background-color:black ;
+    background-color:chocolate ;
     text-decoration: none;
     margin: 10px;
     font-size: 30px;
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.42);
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.42);
 }
 
 .article a:hover
 {
-    background-color: chocolate;
+    background-color: black;
 }
 
 /* Inscription */
@@ -239,6 +242,8 @@ input
     overflow-y: scroll;
     background-color: black;
     padding: 20px;
+    border-top: 1px solid white;
+
     /* scroll-behavior: smooth; */
     /* scroll-snap-type: y mandatory; */
 }

@@ -14,16 +14,12 @@ require ('functions.php');
 <body class="body3">
 <header>
 <nav class="nav">
-
-<!--Nav PHP-->
+<!--Nav-->
 <a href='profil-index.php'>Bienvenue</a>
 <a href='profil.php'>Profil</a>
 <a href='discussion.php'> On DIScuisine ?</a>
 <a href='deconnexion.php'>Deconnexion</a>
-
-
-<!--Nav PHP-->
-
+<!--Nav-->
 </nav>
 </header>
 <main>

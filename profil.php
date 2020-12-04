@@ -14,7 +14,7 @@ if (is_loggedin())
         $newlogin = htmlspecialchars($_POST['newlogin']);
         if (strlen($newlogin) <6)
         {
-            $error = "Login must be atleast 6 characters";
+            $error = "6 characters minimun pour le mot de passe et le login";
         }
         else{
             update_login($newlogin);
@@ -27,7 +27,7 @@ if (is_loggedin())
         $newpassword = ($_POST['newpassword']);
         if (strlen($newpassword) <6)
         {
-            $error = "Password must be atleast 6 characters";
+            $error = "6 characters minimun pour le mot de passe et le login";
         }
         else{
             update_password($newpassword);
@@ -59,17 +59,12 @@ else
 <body class="body4">
 <header>
 <nav class="nav">
-
-<!--Nav PHP-->
+<!--Nav-->
 <a href='profil-index.php'>Bienvenue</a>
 <a href='profil.php'>Profil</a>
 <a href='discussion.php'>On Dis-cuisine ?</a>
 <a href='deconnexion.php'>Deconnexion</a>
-
-
-
-<!--Nav PHP-->
-
+<!--Nav-->
 </nav>
 </header>
 
