@@ -36,6 +36,11 @@ if (is_loggedin())
 
     }
 }
+
+else
+{
+    redirect('connexion.php');
+}
 ?>
 
 

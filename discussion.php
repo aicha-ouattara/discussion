@@ -16,7 +16,7 @@ if (is_loggedin())
     }
 }
 
-if(!is_loggedin() != "")
+else
 {
     redirect('connexion.php');
 }

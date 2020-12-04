@@ -76,11 +76,18 @@
     margin-left: auto;
     margin-right: auto;
     width: 20%;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     display: block;
     flex-direction: column;
+    border-radius: 5px;
 }
+.profil_index_a a:hover
+{
+    background-color: black;
+}
+
+
 .profil_index_a h1
 {
     color: white;
@@ -160,6 +167,23 @@ input
 .profil
 {
     text-align: center;
+    padding: 20px;
+
+}
+
+.profil a
+{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.profil a:hover
+{
+    color: chocolate;
 }
 
 /* Discussion */
