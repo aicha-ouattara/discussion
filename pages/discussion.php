@@ -11,7 +11,15 @@ if (is_loggedin())
 
     if(isset($_POST["submit"]))
     {
-        post_comment($users);
+        $description = htmlspecialchars($_POST["description"]);
+        if(strlen($description ) > 140)
+        {
+            $error = "Votre message ne doit pas depasser 140 characters";
+        }
+        else
+        {
+            post_comment($users);
+        }
 
     }
 }
@@ -75,9 +83,18 @@ else
                             <!--<label for="description">Commentaires</label>-->
                             <textarea id="description" name="description" rows="3" cols="110" placeholder="Ecris !" ></textarea>
                         </div>
+                        <div>
+                            <?php
+                            if(isset($error))
+                            {
+                                echo $error;
+                            }
+                            ?>
+                        </div>
 
                         <input class="submit1" type="submit" name="submit" value="Commentes !">
                     </div>
+
                 </form>
                 <!--End form -->
             </article>

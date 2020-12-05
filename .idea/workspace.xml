@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ed18e-8518-44ad-9160-ec56496026fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/discussion.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/discussion.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607075477588</updated>
-      <workItem from="1607075478807" duration="14001000" />
+      <workItem from="1607075478807" duration="15785000" />
     </task>
     <servers />
   </component>
@@ -48,5 +48,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="400" y="8" key="#PHP/0.0.1440.900@0.0.1440.900" timestamp="1607075800763" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607187587276">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1607187587276" />
   </component>
 </project>
