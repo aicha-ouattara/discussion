@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
 .body0
 {
@@ -331,6 +332,7 @@ textarea::placeholder
     font-weight: bold;
     background-color: chocolate;
     border-radius: 5px;
+    font-size: 20px;
     font-family: 'Dosis', sans-serif;
 
 }
@@ -343,8 +345,11 @@ textarea::placeholder
     font-weight: bold;
     background-color: chocolate;
     width: 30%;
+    font-size: 20px;
     margin-right: 10px;
     border-radius: 5px;
+    font-family: 'Dosis', sans-serif;
+
 }
 
 input
@@ -356,7 +361,8 @@ input
     width: 70%;
     color: white;
     resize: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
 }
 
 input::placeholder
